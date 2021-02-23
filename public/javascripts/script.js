@@ -1,14 +1,6 @@
 $(document).ready(function () {
-    $('#batteryStatusIcon').hover(function () {
-        $(this).removeClass('fa-battery-empty');
-        $(this).addClass('fa-battery-full');
-    }, function () {
-        $(this).removeClass('fa-battery-full');
-        $(this).addClass('fa-battery-empty');
-    }
-    );
+    alert('Your using a project of LokotamaTheMastermind\n\n© 2021 LokotamaTheMastermind');
 });
-
 
 function getBattery(params) {
     var batteryPromise = navigator.getBattery();
@@ -22,9 +14,9 @@ function getBattery(params) {
         });
         batteryObject.addEventListener('levelchange', function (ev) {
             printBatteryStatus(batteryObject);
-        })
+        });
     }
     function printBatteryStatus(batteryObject) {
-        p = document.getElementById('batteryStatus').innerHTML = (batteryObject.level * 100) + "%";
+        p = document.getElementById('batteryStatus').innerHTML = "~~" + Math.round(batteryObject.level * 100) + "%";
     }
 }
