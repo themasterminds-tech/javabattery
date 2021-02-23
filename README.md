@@ -13,6 +13,16 @@ A simple express application for viewing your battery status without refreshing 
 - Run the project using `npm run start`
 - Open you web browser to `localhost:3000`
 
+## Preview
+
+### Picture
+
+![Javabattery Preview](github/preview.jpg)
+
+### Live action
+
+[Recorded Video](github/preview.mp4)
+
 ## Contributors
 
 - LokotamaTheMastermind
