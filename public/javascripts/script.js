@@ -1,12 +1,30 @@
-"use strict";
+$(document).ready(function () {
+    $('#batteryStatusIcon').hover(function () {
+        $(this).removeClass('fa-battery-empty');
+        $(this).addClass('fa-battery-full');
+    }, function () {
+        $(this).removeClass('fa-battery-full');
+        $(this).addClass('fa-battery-empty');
+    }
+    );
+});
 
-var battery = require('battery');
 
-async () => {
-    let {
-        level,
-        charging
-    } = await battery();
-    console.log('Battery level is ' + level);
-    console.log('Battery charging is ' + charging);
-};
+function getBattery(params) {
+    var batteryPromise = navigator.getBattery();
+    batteryPromise.then(batteryCallback);
+
+    function batteryCallback(batteryObject) {
+        printBatteryStatus(batteryObject);
+
+        batteryObject.addEventListener('chargingchange', function (ev) {
+            printBatteryStatus(batteryObject);
+        });
+        batteryObject.addEventListener('levelchange', function (ev) {
+            printBatteryStatus(batteryObject);
+        })
+    }
+    function printBatteryStatus(batteryObject) {
+        p = document.getElementById('batteryStatus').innerHTML = (batteryObject.level * 100) + "%";
+    }
+}

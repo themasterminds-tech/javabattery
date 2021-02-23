@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <!-- <link rel="stylesheet" href="/stylesheets/style.css" /> -->
-    <script src="/javascripts/script.js"></script>
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
 
-    <p>
-      The battery status is <span id="level"></span> and charging time is
-      <span id="chargingTime"></span>
-    </p>
-  </body>
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel="stylesheet" href="/stylesheets/fontawesome.css" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link rel="stylesheet" href="/stylesheets/fontawesomeanimations.css">
+  <script src="/javascripts/jquery.js"></script>
+  <script src="/javascripts/script.js"></script>
+</head>
+
+<body class="background" onload="getBattery();">
+  <div class="centered">
+    <p><i class="fas fa-battery-empty fa-stack-2x faa-pulse animated" style="font-size: 200px; color: white;"
+        id="batteryStatusIcon"></i></p>
+  </div>
+  <p style="font-size: 150px; text-align: right; color: white;" class="bottom" id="batteryStatus"></p>
+</body>
+
 </html>
