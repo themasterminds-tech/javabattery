@@ -17,6 +17,6 @@ function getBattery(params) {
         });
     }
     function printBatteryStatus(batteryObject) {
-        p = document.getElementById('batteryStatus').innerHTML = "~~" + Math.round(batteryObject.level * 100) + "%";
+        p = document.getElementById('batteryStatus').innerHTML = "~" + Math.round(batteryObject.level * 100) + "%";
     }
 }
