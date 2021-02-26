@@ -17,7 +17,7 @@ A simple express application for viewing your battery status without refreshing 
 
 ### Picture
 
-![Javabattery Preview](github/preview.jpg)
+![Javabattery Preview](extra/preview.jpg)
 
 ### Live action
 
