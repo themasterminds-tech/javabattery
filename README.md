@@ -17,7 +17,7 @@ View your battery status dynamically. Built plainly on Javascript
 
 ### Screenshots
 
-![Javabattery Preview](/extra/preview.jpg)
+![Javabattery Preview](extra/preview.jpg)
 
 ## Contributors
 
