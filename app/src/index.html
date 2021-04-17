@@ -3,13 +3,25 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Hello World!</title>
-  <link rel="stylesheet" href="index.css">
+  <title>Javabattery</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="public/fontawesome.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="public/fontawesomeanimations.css">
+
+  <!-- Scripts -->
+  <script src="site.js"></script>
 </head>
 
-<body>
-  <h1>💖 Javabattery!</h1>
-  <p>View your battery status dynamically. Built plainly on Javascript</p>
+<body class="background" onload="getBattery();">
+
+  <!-- Main page -->
+  <div class="centered">
+    <i class="fas fa-battery-empty fa-stack-2x faa-pulse animated" style="font-size: 200px; color: white;"
+      id="batteryStatusIcon"></i>
+  </div>
+  <p style="font-size: 150px; text-align: right; color: white;" class="bottom" id="batteryStatus"></p>
 </body>
 
 </html>
