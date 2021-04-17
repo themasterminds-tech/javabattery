@@ -1,7 +1,7 @@
 {
   "name": "javabattery-web",
   "version": "1.0.1",
-  "description": "View your battery status in the web browser",
+  "description": "View your battery status dynamically. Built plainly on Javascript",
   "private": true,
   "scripts": "node ./bin/www"
 },

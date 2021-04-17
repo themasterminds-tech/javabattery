@@ -4,7 +4,7 @@
 
 ## Description
 
-A simple express application for viewing your battery status without refreshing the page
+View your battery status dynamically. Built plainly on Javascript
 
 ## Setup
 
