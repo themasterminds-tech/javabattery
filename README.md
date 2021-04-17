@@ -1,4 +1,4 @@
-<div><img align="right" width=100 height=100 src="web/public/images/favicon.ico"></div>
+<div><img align="right" width=100 height=100 src="extra/favicon.ico"></div>
 
 # Javabattery
 
@@ -13,6 +13,11 @@ View your battery status dynamically. Built plainly on Javascript
 - Run the project using `npm run start`
 - Open you web browser to `localhost:3000`
 
+## Preview
+
+### Screenshots
+
+![Javabattery Preview](/extra/preview.jpg)
 
 ## Contributors
 
