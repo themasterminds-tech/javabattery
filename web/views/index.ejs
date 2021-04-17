@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/stylesheets/fontawesome.css" />
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link rel="stylesheet" href="/stylesheets/fontawesomeanimations.css">
+  <script src="/javascripts/jquery.js"></script>
+  <script src="/javascripts/script.js"></script>
+</head>
+
+<body class="background" onload="getBattery();">
+  <div class="centered">
+    <i class="fas fa-battery-empty fa-stack-2x faa-pulse animated" style="font-size: 200px; color: white;"
+      id="batteryStatusIcon"></i>
+  </div>
+  <p style="font-size: 150px; text-align: right; color: white;" class="bottom" id="batteryStatus"></p>
+</body>
+
+</html>
