@@ -3,19 +3,24 @@
   "version": "1.0.1",
   "description": "View your battery status dynamically. Built plainly on Javascript",
   "private": true,
-  "scripts": "node ./bin/www"
-},
-"keywords": [
-  "expressjs",
-  "battery",
-  "ejs"
-],
-"dependencies": {
-  "cookie-parser": "~1.4.4",
-  "debug": "~2.6.9",
-  "ejs": "~2.6.1",
-  "express": "~4.16.1",
-  "http-errors": "~1.6.3",
-  "morgan": "~1.9.1"
-}
+  "scripts": {
+    "start": "node ./bin/www",
+    "lint": "npx eslint app.js routes/"
+  },
+  "keywords": [
+    "expressjs",
+    "battery",
+    "ejs"
+  ],
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.24.0"
+  }
 }
