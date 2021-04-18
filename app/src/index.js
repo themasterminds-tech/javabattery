@@ -11,7 +11,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 1500,
     height: 800,
-    icon: __dirname + 'favicon.ico',
+    icon: __dirname + '/favicon.ico',
     webPreferences: {
       nodeIntegration: true
     }
